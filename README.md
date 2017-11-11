@@ -7,3 +7,6 @@ _Things I learn/forget over time._
 
 ### GitHub
 - [GitHub doesn't support files larger than 100MB by default](https://toubou91.github.io/how-to-push-large-files-to-github/)
+
+### Git
+- You can force push directly to master from a detached head. Then, once on master, you have to pull.
