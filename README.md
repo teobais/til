@@ -10,3 +10,6 @@ _Things I learn/forget over time._
 
 ### Git
 - You can force push directly to master from a detached head. Then, once on master, you have to pull.
+
+### Unix
+- You cannot use `(` or `)` as part of a filename, unless you surround that filename with quotes. The follwing will not work: `touch hello(asd)`, but this one will work: `touch "hello(asd)"`
