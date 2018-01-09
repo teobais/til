@@ -14,7 +14,10 @@ _Things I learn/forget over time._
 ### Unix
 - You cannot use `(` or `)` as part of a filename, unless you surround that filename with quotes. The follwing will not work: `touch hello(asd)`, but this one will work: `touch "hello(asd)"`
 - If a script put on cron gives an error like "cannot identify file or directory", it is probably because the crontab does not cd to the offending directory.
-- cron can take up to 7 arguments: `minute hour dom month dow user cmd`. More details [here](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) and [here](https://itisatechiesworld.wordpress.com/jenkins-related-articles/jenkins-configuration/jenkins-scheduling-jenkins-jobs-for-a-specific-time/). 
+- cron can take up to 7 arguments: `minute hour dom month dow user cmd`.
+Example: `H/5 * * * *` : The H will take a numeric hash of the Job name and use this to ensure that different jobs with the same cron settings do not all trigger at the same time.
+H/5 in the first field means Every five minutes starting at some time between 0 and 4 minutes past the hour.
+More details [here](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) and [here](https://itisatechiesworld.wordpress.com/jenkins-related-articles/jenkins-configuration/jenkins-scheduling-jenkins-jobs-for-a-specific-time/). 
 
 ### Jekyll
 - Jekyll does not include a post in the compiled version of your blog, unless `given timestamp <= current timestamp`
