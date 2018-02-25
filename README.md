@@ -21,3 +21,4 @@ More details [here](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) a
 
 ### Jekyll
 - Jekyll does not include a post in the compiled version of your blog, unless `given timestamp <= current timestamp`
+- One should always define the `url` value in the `_config.yml`. Eventhough it might work locally with an empty value for it, when deployed on Github Pages, it will cause assets like images to not be loaded.
